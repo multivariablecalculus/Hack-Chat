@@ -14,6 +14,11 @@ def print_banner():
 
 print_banner()
 
+def clear():
+   if os.name == 'nt':
+      os.system('cls')
+   else:
+      os.system('clear')
 def main():
     menu1 = """
 [ 1 ] IP Tracker (International)
